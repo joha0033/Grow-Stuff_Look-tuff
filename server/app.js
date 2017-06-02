@@ -1,4 +1,7 @@
 
+  
+  console.log("fuck");
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 const express = require('express')
 const cors = require('cors')
@@ -9,9 +12,7 @@ app.use(cors())
 
 const coolFacts = []
 
-$(document).ready(function(){
-  $('.carousel').carousel();
-})
+
 
 app.get('/facts', (request, response) => {
   response.json(coolFacts)
